@@ -10,7 +10,7 @@
   box-sizing: border-box;
 }
 body {
-  background-image: url('/images/bg.jpg');
+  background-image: url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80');
   background-position: top;
   background-size: cover;
   font-family: var(--font);
@@ -145,15 +145,15 @@ main {
   transform: translate(-50%, -50%) scale(1.5);
 }
 #tour1 {
-  background-image: url('/images/tour1.jpg');
+  background-image: url('https://images.unsplash.com/photo-1511737328620-75db98938c6c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80');
   background-size: cover;
 }
 #tour2 {
-  background-image: url('/images/tour2.jpg');
+  background-image: url('https://images.unsplash.com/photo-1519181258491-889c2b001485?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80');
   background-size: cover;
 }
 #tour3 {
-  background-image: url('/images/tour3.jpg');
+  background-image: url('https://images.unsplash.com/photo-1485219663822-f3da8e64682b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80');
   background-size: cover;
 }
 .shadow {
