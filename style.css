@@ -86,27 +86,22 @@ main {
   color: var(--mainColor);
   letter-spacing: 1px;
   background-color: var(--highlightColor);
-  cursor: pointer3;
-}
-
-#discover {
-  font-weight: 300;
+  cursor: pointer;
 }
 #location-name {
   font-weight: 500;
 }
 .location-container {
-  position: absolute;
-  font-size: 12px;
-  transform: rotate(90deg);
-  right: 0;
-  top: 40%;
-  text-align: right;
+  margin-bottom: 1rem;
 }
 .social-icons {
   position: absolute;
   left: 10%;
   bottom: 40px;
+}
+.social-icons hr {
+  border-width: 0.5px;
+  margin-bottom: 1rem;
 }
 .social-icons svg {
   transition: 400ms ease stroke;
@@ -114,7 +109,7 @@ main {
 .social-icons svg:hover {
   stroke: var(--highlightColor);
 }
-.social-icons svg:nth-child(2) {
+.social-icons svg:nth-child(4) {
   margin: 0 25px;
 }
 .tour-container {
@@ -127,36 +122,82 @@ main {
 }
 .tour-img {
   position: relative;
+  cursor: pointer;
   width: 30%;
   height: 20vh;
   border-radius: 5px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
-}
-.tour-img::before {
-  content: url('images/arrow-right-circle.svg');
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   transition: 400ms ease;
 }
+.tour-img::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transition: 400ms ease;
+}
+
+.tour-img:hover {
+  transform: scale(1.2);
+}
 .tour-img:hover::before {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1.5);
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0)
+  );
 }
 #tour1 {
   background-image: url('https://images.unsplash.com/photo-1519181258491-889c2b001485?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80');
   background-size: cover;
 }
+#tour1::after {
+  content: 'Discover Vancouver';
+  opacity: 0;
+  position: absolute;
+  left: 10%;
+  bottom: 0;
+  transition: 400ms ease;
+}
+#tour1:hover::after {
+  opacity: 1;
+  left: 10%;
+  bottom: 10%;
+}
 #tour2 {
-  background-image: url('https://images.unsplash.com/photo-1511737328620-75db98938c6c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80');
-
+  background-image: url('https://images.unsplash.com/photo-1489447068241-b3490214e879?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80');
   background-size: cover;
+}
+#tour2::after {
+  content: 'Discover Niagara Falls';
+  opacity: 0;
+  position: absolute;
+  left: 10%;
+  bottom: 0;
+  transition: 400ms ease;
+}
+#tour2:hover::after {
+  opacity: 1;
+  left: 10%;
+  bottom: 10%;
 }
 #tour3 {
   background-image: url('https://images.unsplash.com/photo-1485219663822-f3da8e64682b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80');
   background-size: cover;
+}
+#tour3::after {
+  content: 'Discover Nordegg';
+  opacity: 0;
+  position: absolute;
+  left: 10%;
+  bottom: 0;
+  transition: 400ms ease;
+}
+#tour3:hover::after {
+  opacity: 1;
+  left: 10%;
+  bottom: 10%;
 }
 .shadow {
   height: 100%;
