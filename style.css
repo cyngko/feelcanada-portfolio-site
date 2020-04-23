@@ -44,6 +44,7 @@ main {
   list-style: none;
 }
 .nav-links li a {
+  font-weight: 300;
   text-decoration: none;
   color: var(--mainColor);
   text-transform: uppercase;
@@ -132,7 +133,7 @@ main {
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
 }
 .tour-img::before {
-  content: url('/images/svg/arrow-right-circle.svg');
+  content: url('/images/arrow-right-circle.svg');
   position: absolute;
   top: 50%;
   left: 50%;
