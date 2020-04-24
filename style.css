@@ -69,14 +69,15 @@ main {
   top: 30%;
 }
 .content-container h1 {
-  font-size: 5rem;
+  font-size: clamp(4rem, 5rem, 6rem);
 }
 .content-container p {
   line-height: 2rem;
-  font-size: 1rem;
+  font-size: clamp(1rem, 1.25vw, 1.25rem);
   font-weight: 300;
 }
 .content-container button {
+  position: relative;
   padding: 15px 20px;
   border-radius: 5px;
   text-transform: uppercase;
@@ -87,6 +88,21 @@ main {
   letter-spacing: 1px;
   background-color: var(--highlightColor);
   cursor: pointer;
+}
+.content-container button::after {
+  content: url('images/chevron-right.svg');
+  position: absolute;
+  top: 10px;
+  opacity: 0;
+  right: 7px;
+  transition: 400ms ease;
+}
+.content-container button:hover {
+  padding-right: 30px;
+}
+.content-container button:hover::after {
+  right: 3px;
+  opacity: 1;
 }
 #location-name {
   font-weight: 500;
