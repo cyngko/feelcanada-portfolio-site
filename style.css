@@ -88,6 +88,7 @@ main {
   letter-spacing: 1px;
   background-color: var(--highlightColor);
   cursor: pointer;
+  transition: 400ms ease;
 }
 .content-container button::after {
   content: url('images/chevron-right.svg');
